@@ -129,11 +129,11 @@ btn.addEventListener('click', function () {
     var td = document.createElement('td');
     trActivite.appendChild(td);
     td.addEventListener('click', function (event) {
-      if (event.target.innerHTML !== ' ') {
+      if (event.target.innerHTML !== '') {
         // eslint-disable-next-line no-param-reassign
-        event.target.innerHTML = ' ';
+        event.target.innerHTML = '';
       } else {
-        event.target.innerHTML = '  &bull;';
+        event.target.innerHTML = ' &bull;';
       }
 
       event.target.style.fontSize = '40px';
